@@ -13,13 +13,12 @@ int main()
 
     while (currentRow <= totalRows)
     {
-        int col = 1;
-        while (col <= totalRows)
-        {
-            cout << col << " ";
+        int col = 1; 
+        while(col<=totalRows){
+            cout<<currentRow << " ";
             col++;
         }
-        cout << endl;
+        cout<<endl;
         currentRow++;
     }
 }

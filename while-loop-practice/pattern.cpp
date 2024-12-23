@@ -1,46 +1,26 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
 
-int main()
-{
 
-    int i = 1;
-    int s;
-    cin >> s;
+int main(){
 
-    // * * *
-    // * * *
-    // * * *
+    int n;
 
-    // while (i <= s)
-    // {
-    //     int j = 1;
-    //     while (j <= s)
-    //     {
-    //         cout << " * ";
-    //         j++;
-    //     };
+    cout << "Enter the number of rows: ";
+    cin >> n;
 
-    //     cout << endl;
-    //     i++;
-    // };
+    int row = 1;
+    while(row<=n){
+        int col = 1;
 
-    // 1 1 1
-    // 2 2 2
-    // 3 3 3
-
-    while (i <= s)
-    {
-        int j = 1;
-        while (j <= s)
+        while (col<=n)
         {
-            cout << " " << i << " ";
-            j++;
-        };
-
+            cout << "* ";
+            col++;
+        }
         cout << endl;
-        i++;
-    };
+        row++;
+        
+    }
 
-    return 0;
-}
+};
