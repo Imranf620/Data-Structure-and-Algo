@@ -9,18 +9,23 @@ int main()
     cout << "Enter the number of rows: ";
     cin >> totalRows;
 
+
+    char ch = 'A';
     int currentRow = 1;
-    int numbToPrint = 1;
 
     while (currentRow <= totalRows)
+
     {
         int col = 1;
-        while(col<=totalRows){
-            cout<<numbToPrint<<" ";
-            numbToPrint++;
+        while (col<=totalRows)
+        {
+            cout<<ch<<" ";
             col++;
+
         }
         cout<<endl;
+        ch++;
         currentRow++;
+        
     }
 }

@@ -10,14 +10,12 @@ int main()
     cin >> totalRows;
 
     int currentRow = 1;
-    int numbToPrint = 1;
 
     while (currentRow <= totalRows)
     {
         int col = 1;
-        while(col<=totalRows){
-            cout<<numbToPrint<<" ";
-            numbToPrint++;
+        while(col<=currentRow){
+            cout<<currentRow+col-1<<" " ;
             col++;
         }
         cout<<endl;
