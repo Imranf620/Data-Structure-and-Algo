@@ -22,7 +22,7 @@ void findUnique(int arr[], int n)
     }
     std::cout << "The Unique Num is: " << number << std::endl;
 };
-
+// 
 int main()
 {
 
