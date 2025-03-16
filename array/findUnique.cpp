@@ -1,28 +1,38 @@
 #include <iostream>
 
+// void findUnique(int arr[], int n)
+// {
+//     for (int i = 0; i < n; i++)
+//     {
+//         int count = 0;
+
+//         for (int i2 = 0; i2 < n; i2++)
+//         {
+//             if (arr[i] == arr[i2])
+//             {
+//                 count++;
+//             }
+//         };
+//         if (count == 1)
+//         {
+
+//             std::cout << "The Unique Num is: " << arr[i] << std::endl;
+//         }
+//     }
+// };
+//
+
 void findUnique(int arr[], int n)
 {
-    int number;
+
+    int ans  =0;
     for (int i = 0; i < n; i++)
     {
-
-        for (int i2 = 0; i2 < n; i2++)
-        {
-            if (arr[i] == arr[i2])
-            {
-                break;
-            }
-            else
-            {
-                number = arr[i];
-            }
-            i2++;
-        };
-        i++;
+      
+        ans = ans ^ arr[i];
     }
-    std::cout << "The Unique Num is: " << number << std::endl;
+    std::cout<<"the unique is: "<<ans<<std::endl;
 };
-// 
 int main()
 {
 

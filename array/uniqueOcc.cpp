@@ -1,4 +1,11 @@
- int occurrences[length] = {0}; 
+#include <iostream>
+
+class Solution
+{
+public:
+    bool uniqueOccurrences(int arr[], int length)
+    {
+        int occurrences[length] = {0}; 
         for (int i = 0; i < length; i++)
         {
             for (int j = 0; j < length; j++)
@@ -22,3 +29,12 @@
         }
 
         return true;
+    }
+};
+
+int main()
+{
+    int testArr[] = {1, 2, 2, 3, 3, 3};
+    Solution sol;
+    std::cout << "Result: " << sol.uniqueOccurrences(testArr, 6) << std::endl;
+}
