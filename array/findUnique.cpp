@@ -21,6 +21,7 @@
 //     }
 // };
 //
+//
 
 void findUnique(int arr[], int n)
 {
